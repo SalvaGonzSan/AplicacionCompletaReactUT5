@@ -4,6 +4,7 @@ import TablaComponentesSimples from './TablaComponentesSimples'
 import TablaComponentesSimplesProps from './TablaComponentesSimplesProps'
 import TablaComponentesSimplesState from './TablaComponentesSimplesState'
 import Formulario from './Formulario'
+import Api from './Api'
 //import personajes from './personajes.json'
 
 class App extends Component {
@@ -99,7 +100,9 @@ manejarEnvio = personaje => {
         <TablaComponentesSimplesState datosPersonaje={personajes} borrarPersonaje={this.borrarPersonaje} />
         <h2>Añadir nuevo</h2>
         <Formulario manejarEnvio={this.manejarEnvio} />
-        <h2>Menú con rutas</h2>
+        <h2>Datos de la API de Andreas Reiterer</h2>
+        <h3>Lista de contactos:</h3>
+        <Api />
       </div>
     )
   }
